@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&display=swap');
+
+html {
+    --background: #F3EFF5;
+    --title__color: #090C0B;
+    --purple: #231123;
+    --lilac: #c7adc3;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Karla', sans-serif;
+    color: var(--title__color);
+    margin: 0;
+}
+
+main {
+    margin: auto;
+    padding: 2em;
+    width: 90vw;
+    height: 90vh;
+}
+
+main h1 {
+    font-size: clamp(2vw, 10vw, 4rem);
+    max-width: 100%;
+}
+
+#btn__notion {
+    position: absolute;
+    top: 1em;
+    right: auto;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    background-color: transparent;
+}
+
+#btn__notion svg {
+    width: 4vmax;
+    max-width: 4em;
+    height: 4vmax;
+    max-height: 4em;
+    color: rgb(17, 17, 15);
+}
+
+#btn__notion svg:hover {
+    color: var(--purple);
+}
+
+.btn__container {
+    display: block;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.largebtn {
+    background-color: var(--purple);
+    margin: 1em 0;
+    font-size: clamp(1.8vw, 4.2vw, 1.2rem);
+    color: var(--background);
+    border: none;
+    padding: .5em;
+}
+
+.largebtn:hover {
+    background-color: var(--lilac);
+    color: var(--purple);
+}
+
+.smallbtn {
+    color: var(--background);
+    font-size: clamp(1.4vw, 4vw, 1rem);
+    font-weight: 600;
+    padding: .5em;
+    display: inline-block;
+    background-color: var(--title__color);
+    border: none;
+    opacity: .9;
+}
+
+#checksvg {
+    width: 1em;
+    height: .9em;
+    color: var(--background);
+}
+
+.smallbtn:hover {
+    color: var(--background);
+    background-color: var(--lilac);
+    opacity: 1;
+}
+
+#input__url {
+    display: block;
+    width: clamp(5em, 20em, 70%);
+    font-size: clamp(2vw, 5vw, 1.3rem);
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px solid var(--title__color);
+}
+
+input:active, input:focus {
+    background: linear-gradient(0deg, rgba(138,138,138,1) 0%, rgba(220,219,221,1) 60%, rgba(243,239,245,1) 100%);
+    outline: none;
+    border-bottom: 1px solid var(--title__color);
+}
+
+@media screen and (min-width: 520px) {
+    main {
+        max-width: 500px;
+        max-height: 500px;
+    }
+}
+
+/* List View */
+ul {
+    margin-top: 5vw;
+    border: 1px solid red;
+}
+
+li {
+    overflow-wrap: anywhere;
+    font-size: clamp(1.4vw, 4vw, 1rem);
+}
